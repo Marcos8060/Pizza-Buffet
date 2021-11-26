@@ -144,3 +144,33 @@ select option{
     display: flex;
     align-items: center;
 }
+/* testimonial section */
+.testimonial{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.testimonial h1{
+    font-weight: bolder;
+}
+.background{
+    position: relative;
+    background-color: #e64646;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 20%;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+}
+.chef{
+    margin-top: -90px;
+    height: 400px;
+    width: 300px;
+}
+.star{
+    width: 30px;
+}
