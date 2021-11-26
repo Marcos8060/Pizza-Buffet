@@ -110,3 +110,37 @@ h1{
 .row h4{
     font-weight: bolder;
 }
+/* menu section */
+.menu_section{
+    margin-top: 70px;
+}
+.products{
+    background-color: rgb(218, 204, 204);
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+.products img{
+    width: 150px;
+    height: 150px;
+}
+select option{
+    width: 50px;
+}
+.btn2{
+    border: none;
+    background-color: #e64646;
+    color: white;
+    height: 45px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'poppins',sans-serif;
+    margin-top: 5px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
