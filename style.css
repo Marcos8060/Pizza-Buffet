@@ -190,3 +190,86 @@ footer{
 .order:nth-child(even){
     border: 1px dashed #e64646;
 }
+@media (max-width: 768px) {
+    .circle{
+        display: none;
+    }
+    .navbar{
+        height: 60px;
+        position: sticky;
+    }
+    .collapse{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .navbar-brand img{
+        margin-top: -55px;
+    }
+    .cart{
+        margin-left: 200px;
+        margin-top: -150px;
+    }
+    .totalItemsInCart{
+        margin-left: 250px;
+        margin-top: -160px;
+    }
+    .hero_details h1{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    .hero_details p,h5{
+        text-align: center;
+    }
+    .hero_details .btn{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .happy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .star{
+       margin-left: 100px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img{
+        margin-left: 50px;
+    }
+    .about h4,p{
+        text-align: center;
+    }
+    .background{
+        width: 200px;
+        height: 150px;
+    }
+    .background img{
+        width: 200px;
+        height: 260px;
+    }
+    .desc{
+        margin-top: 100px;
+    }
+    .desc img{
+        display: flex;
+    }
+    .star-img{
+       display: none;
+    }
+    .desc .btn{
+        width: 100%;
+    }
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
