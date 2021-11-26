@@ -87,3 +87,26 @@ span{
     width: 50px;
     height: 50px;
 }
+/* about section */
+.about_section{
+    margin-top: 100px;
+    background-color: white;
+}
+.serve{
+    color: #e64646;
+    font-weight: 700;
+}
+h1{
+    font-weight: bolder;
+}
+.about_section img{
+    height: 150px;
+    width: 150px;
+}
+.row{
+    width: 80%;
+    margin: auto;
+}
+.row h4{
+    font-weight: bolder;
+}
