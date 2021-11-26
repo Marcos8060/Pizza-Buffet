@@ -174,3 +174,8 @@ select option{
 .star{
     width: 30px;
 }
+/* footer section */
+footer{
+    font-family: 'poppins',sans-serif;
+    font-weight: bolder;
+}
