@@ -41,3 +41,49 @@ body{
     clip-path: circle(600px at 950px 0px);
     z-index: -1;
 }
+/* Hero section */
+.hero_details h1{
+    margin-top: 100px;
+}
+.hero-section{
+    background-color: #FEF4F3;
+}
+.dotted img:first-child{
+    margin-left: 590px;
+    margin-top: 150px;
+}
+.pizza1{
+    margin-left: 500px;
+    margin-top: -80px;
+}
+span{
+    color: #e64646;
+    font-size: 60px;
+}
+.deliver{
+    color: white;
+}
+.btn{
+    background-color: #e64646;
+    color: white;
+    height: 45px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'poppins',sans-serif;
+    margin-top: 5px;
+}
+.btn:hover{
+    font-size: 18px;
+    transition: 2s;
+    padding-bottom: 3px;
+    color: white;
+}
+.happy{
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.rounded-circle{
+    width: 50px;
+    height: 50px;
+}
