@@ -179,3 +179,14 @@ footer{
     font-family: 'poppins',sans-serif;
     font-weight: bolder;
 }
+/* checkout */
+.order{
+    border: 1px solid #DACCCC;
+    background-color: #DACCCC;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.order:nth-child(even){
+    border: 1px dashed #e64646;
+}
