@@ -17,10 +17,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="./Images/pizza1.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pizza Buffet</title>
+    <title>Pizza-Buffet</title>
   </head>
   <body>
+    <!-- nav bar -->
     <nav class="navbar navbar-expand-lg nav-bar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -250,7 +252,6 @@
         </div>
       </div>
     </div>
-    <!-- End of hero section -->
 
     <!-- about section -->
     <div class="about_section">
@@ -279,8 +280,6 @@
         </div>
       </div>
     </div>
-    <!-- End of about section -->
-
     <!-- menu section -->
     <div class="menu_section">
       <div class="container">
@@ -294,8 +293,6 @@
         </div>
       </div>
     </div>
-    <!-- menu section -->
-
     <!-- testimonial section -->
     <div class="testimonial">
       <div class="container">
@@ -338,402 +335,73 @@
         </div>
       </div>
     </div>
-    <!-- ENd of testimonial section -->
-
-    Search or jump to… Pull requests Issues Marketplace Explore @Marcos8060
-    Marcos8060 / Carnivores-Pizza-Buffet Public 1 00 Code Issues Pull requests
-    Actions Projects Wiki Security Insights Settings
-    Carnivores-Pizza-Buffet/index.html @Marcos8060 Marcos8060 created the
-    delivery functionality Latest commit 0283c2a 9 days ago History 1
-    contributor 283 lines (269 sloc) 12.1 KB
-
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
-        ></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link
-          rel="shortcut icon"
-          href="./Images/pizza1.png"
-          type="image/x-icon"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Pizza-Buffet</title>
-      </head>
-      <body>
-        <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg nav-bar-light fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img
-                src="https://img.icons8.com/color/48/000000/pizza-delivery.png"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Gallery</a>
-                <a class="nav-link" href="#">News</a>
-              </div>
+    <!-- footer section -->
+    <div class="footer_section">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Pizza-Buffet</h3>
+              <p>
+                Our job is filling your tummy with delicious food and the fast
+                and free delivery.
+              </p>
+              <p>Contact us</p>
             </div>
-          </div>
-          <img
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            class="cart"
-            src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-cart-ecommerce-icongeek26-linear-colour-icongeek26.png"
-          />
-          <div class="totalItemsInCart">0</div>
-        </nav>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4
-                  class="modal-title font-weight-bolder"
-                  id="exampleModalLabel"
-                >
-                  Carnivores-Pizza-Buffet
-                </h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="title d-flex justify-content-between underline">
-                  <h5>Product/Name</h5>
-                  <h5>Quantity</h5>
-                  <h5>Amount</h5>
-                </div>
-                <div class="cartItems">
-                  <!-- append cart items here -->
-                </div>
-                <div class="subTotals">
-                  <!-- append subtotals here -->
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#checkout"
-                  data-bs-dismiss="modal"
-                >
-                  Checkout
-                </button>
-                <button type="button" class="btn2" data-bs-dismiss="modal">
-                  Cancel
-                </button>
-              </div>
+            <div class="col">
+              <h3>Support</h3>
+              <p>Account</p>
+              <p>Support center</p>
+              <p>Feedback</p>
+            </div>
+            <div class="col">
+              <h3>Get in touch</h3>
+              <p>Question or feedback, we'd love to here from you.</p>
+              <p>marcosgav80@gmail.com</p>
             </div>
           </div>
         </div>
-        <!-- End of modal -->
+      </footer>
+    </div>
 
-        <!-- checkout modal -->
+    <!-- <script src="products.js"></script>
+      <script src="ui.js"></script>
+      <script src="app.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('#form').submit(function(e){
+            e.preventDefault();
+            var name = $('input#name').val();
+            var location = $('input#location').val();
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="checkout"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div>
-                  <div class="row checkout">
-                    <!-- checkout section -->
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#delivery"
-                  data-bs-dismiss="modal"
-                >
-                  Proceed to delivery
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- End of checkout modal -->
-
-        <!-- delivery modal -->
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="delivery"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="searchContainer">
-                  <div class="search"></div>
-                </div>
-                <form id="form">
-                  <label for="name" class="form-label">Name</label>
-                  <input id="name" type="text" class="form-control" />
-                  <label for="location" class="form-label">Location</label>
-                  <input id="location" type="text" class="form-control" />
-                  <button class="btn2">Submit</button>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of delivery modal -->
-
-        <!-- Hero section -->
-        <div class="circle">
-          <div class="dotted">
-            <img class="img-fluid welcome" src="./Images/welcome.png" alt="" />
-            <img class="img-fluid pizza1" src="./Images/pizza1.png" alt="" />
-          </div>
-        </div>
-        <div class="hero_details">
-          <div class="container">
-            <h1 class="font-weight-bold">
-              Welcome to <br />
-              Carnivores-Pizza <br />
-              <span>Buffet.</span>
-            </h1>
-            <p class="font-weight-bold">
-              Our job is filling your tummy with delicious <br />
-              and with fast and free delivery.
-            </p>
-            <button class="btn">Read more</button>
-            <div>
-              <div class="happy">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="./Images/happy1.jpg"
-                  alt=""
-                />
-                <img
-                  class="rounded-circle img-fluid"
-                  src="./Images/happy1.jpg"
-                  alt=""
-                />
-                <img
-                  class="rounded-circle img-fluid"
-                  src="./Images/happy1.jpg"
-                  alt=""
-                />
-              </div>
-              <h5 class="font-weight-bold">Our Happy Customers</h5>
-              <img
-                style="height: 30px; margin-top: -10px"
-                src="https://img.icons8.com/fluency/48/000000/star.png"
-              />4.8 (5.9k Review)
-            </div>
-          </div>
-        </div>
-
-        <!-- about section -->
-        <div class="about_section">
-          <h6 class="text-center serve pt-5 pb-5">What we serve</h6>
-          <h1 class="text-center font-weight-bold">
-            Your favorite food <br />
-            delivery partner
-          </h1>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <img class="img-fluid" src="./Images/order1.svg" alt="order" />
-                <h4>Easy to order</h4>
-                <p>You only need a few steps in ordering food</p>
-              </div>
-              <div class="col">
-                <img
-                  class="img-fluid"
-                  src="./Images/order2.svg"
-                  alt="delivery"
-                />
-                <h4>Fastest delivery</h4>
-                <p>Delivery that is always on time even faster.</p>
-              </div>
-              <div class="col">
-                <img
-                  class="img-fluid"
-                  src="./Images/order3.svg"
-                  alt="recieve"
-                />
-                <h4>Best quality</h4>
-                <p>Not only fast for us, quality is also paramount.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- menu section -->
-        <div class="menu_section">
-          <div class="container">
-            <h6 class="serve text-center">Our Menu</h6>
-            <h1 class="text-center">
-              Menu that always <br />
-              leaves you craving for more...
-            </h1>
-            <div class="row menuItems">
-              <!-- Display menu products here -->
-            </div>
-          </div>
-        </div>
-        <!-- testimonial section -->
-        <div class="testimonial">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="background">
-                  <img
-                    class="img-fluid chef"
-                    src="./Images/chef.png"
-                    alt="chef"
-                  />
-                </div>
-              </div>
-              <div class="col">
-                <h6 class="serve">WHAT THEY SAY...</h6>
-                <h1>What Our Customers Say...</h1>
-                <q class="font-weight-bold"
-                  >Carnivores-Pizza-Buffet is the best.Besides the many and
-                  delicious meals,the service is also very good especially in
-                  the very fast delivery.I highly recommend Pizza-Buffet to you. </q
-                ><br /><br />
-                <img
-                  class="star"
-                  src="https://img.icons8.com/color/48/000000/filled-star--v1.png"
-                />
-                <img
-                  class="star"
-                  src="https://img.icons8.com/color/48/000000/filled-star--v1.png"
-                />
-                <img
-                  class="star"
-                  src="https://img.icons8.com/color/48/000000/filled-star--v1.png"
-                />
-                <img
-                  class="star"
-                  src="https://img.icons8.com/color/48/000000/filled-star--v1.png"
-                />
-                <img
-                  class="star"
-                  src="https://img.icons8.com/color/48/000000/star-half.png"
-                /><b>4.8</b><br />
-                <button class="btn">Load More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- footer section -->
-        <div class="footer_section">
-          <footer>
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <h3>Pizza-Buffet</h3>
-                  <p>
-                    Our job is filling your tummy with delicious food and the
-                    fast and free delivery.
-                  </p>
-                  <p>Contact us</p>
-                </div>
-                <div class="col">
-                  <h3>Support</h3>
-                  <p>Account</p>
-                  <p>Support center</p>
-                  <p>Feedback</p>
-                </div>
-                <div class="col">
-                  <h3>Get in touch</h3>
-                  <p>Question or feedback, we'd love to here from you.</p>
-                  <p>marcosgav80@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
-        <!-- ENd of footer section -->
-      </body>
-    </html>
+            if(name !== '' && location !== ''){
+              // create element
+               const h5 = document.createElement('h5');
+               h5.className = 'alert alert-success';
+               h5.appendChild(document.createTextNode(`Thank you ${name}, your order will be delivered to ${location}`));
+               const searchContainer = document.querySelector('.searchContainer');
+               const search = document.querySelector('.search');
+               searchContainer.insertBefore(h5,search);
+            }else{
+              clearAlert();
+              const h5 = document.createElement('h5');
+               h5.className = 'alert alert-danger';
+               h5.appendChild(document.createTextNode(`You are required to fill all the fields!`));
+               const searchContainer = document.querySelector('.searchContainer');
+               const search = document.querySelector('.search');
+               searchContainer.insertBefore(h5,search);
+            }
+            setTimeout(()=>{
+              clearAlert();
+            },5000);
+          })
+          function clearAlert(){
+            const currentAlert = document.querySelector('.alert');
+            if(currentAlert){
+              currentAlert.remove();
+            }
+          }
+        })
+      </script> -->
   </body>
 </html>
