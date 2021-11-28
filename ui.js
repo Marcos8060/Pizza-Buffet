@@ -67,10 +67,5 @@ class UI  {
                         </div>
         `
     }
-    showTotals(totalPrice){
-        this.grandTotal.innerHTML = `
-          <h6>ksh${totalPrice}</h6>
-        `
-    }
 
 }

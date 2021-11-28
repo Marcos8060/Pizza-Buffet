@@ -32,7 +32,6 @@ function updateCart(){
     appendItemsInCart();
     getSubToTals();
     showSummary();
-    showTotals();
 }
 // get subtotals
 function getSubToTals(){
@@ -43,14 +42,6 @@ function getSubToTals(){
         totalCartItems.innerHTML = totalUnits;
     })
     ui.getSubToTals(totalPrice,totalUnits);
-}
-// show totals on checkout
-function showTotals(){
-    let totalPrice = 0;
-    cart.forEach((item)=>{
-        totalPrice = item.price * item.numberOfUnits;
-    })
-    ui.grandTotal(totalPrice);
 }
 // append items in cart
 function appendItemsInCart(){
