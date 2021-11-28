@@ -4,6 +4,7 @@ class UI  {
         this.cartItems = document.querySelector('.cartItems');
         this.subTotals = document.querySelector('.subTotals');
         this.checkout = document.querySelector('.checkout');
+        this.grandTotal = document.querySelector('.grandTotal');
 
     }
 
@@ -15,7 +16,7 @@ class UI  {
                         <h4>Size: ${size}</h4>
                         <div class="price">
                         <div>
-                        <h5 class="font-weight-bold">Price: $${price}</h5>
+                        <h5 class="font-weight-bold">Price: ksh${price}</h5>
                         </div>
                         <div>
                         <img style="height: 30px;margin-top: -10px;width: 30px;" src="https://img.icons8.com/fluency/48/000000/star.png"/>4.8 (5.9k Review)
@@ -43,7 +44,7 @@ class UI  {
                         <b style="font-size: 25px;">${numberOfUnits}</b>
                         <img onClick="changeUnits('plus',${id})" src="https://img.icons8.com/ios-glyphs/30/fa314a/plus.png"/>
                         </div>
-                        <p class="font-weight-bold">$${price}</p>
+                        <p class="font-weight-bold">ksh${price}</p>
                         </div>
                     `
     }
@@ -52,17 +53,24 @@ class UI  {
                         <div class="totals d-flex justify-content-between">
                             <h5>Totals</h5>
                             <h6>${totalUnits} (units)</h6>
-                            <h5 class="font-weight-bold">$${totalPrice}</h5>
+                            <h5 class="font-weight-bold">ksh${totalPrice}</h5>
                         </div>
                     `
     }
-    appendSummary(title,size){
+    appendSummary(title,size,price,numberOfUnits){
         this.checkout.innerHTML += `
                         <div class="col order">
                         <h5>${title}</h5>
                         <p>${size}</p>
-                        <p>mushroom</p>
+                        <p>ksh${price}</p>
+                        <p>Units: ${numberOfUnits}</p>
                         </div>
         `
     }
+    showTotals(totalPrice){
+        this.grandTotal.innerHTML = `
+          <h6>ksh${totalPrice}</h6>
+        `
+    }
+
 }

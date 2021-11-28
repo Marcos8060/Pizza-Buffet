@@ -32,6 +32,7 @@ function updateCart(){
     appendItemsInCart();
     getSubToTals();
     showSummary();
+    showTotals();
 }
 // get subtotals
 function getSubToTals(){
@@ -42,6 +43,14 @@ function getSubToTals(){
         totalCartItems.innerHTML = totalUnits;
     })
     ui.getSubToTals(totalPrice,totalUnits);
+}
+// show totals on checkout
+function showTotals(){
+    let totalPrice = 0;
+    cart.forEach((item)=>{
+        totalPrice = item.price * item.numberOfUnits;
+    })
+    ui.grandTotal(totalPrice);
 }
 // append items in cart
 function appendItemsInCart(){
@@ -55,7 +64,7 @@ function appendItemsInCart(){
 function showSummary(){
     ui.checkout.innerHTML = "";
     cart.forEach((item)=>{
-        ui.appendSummary(item.title,item.size);
+        ui.appendSummary(item.title,item.size,item.price,item.numberOfUnits,item.totalPrice);
     });
 }
 
@@ -91,25 +100,27 @@ $(document).ready(function(){
 
         if(nameInput && locationInput){
             // create element
-            const h5 = document.createElement('h5');
-            h5.className = 'alert alert-success';
-            h5.appendChild(document.createTextNode(`Thank you ${nameInput}, your order will be delivered to ${locationInput}`));
+            const p = document.createElement('p');
+            p.className = 'alert alert-success';
+            p.appendChild(document.createTextNode(`Thank you ${nameInput}, your order 
+            will be delivered to ${locationInput}.We will charge an extra cost of ksh150 
+            for the delivery.`));
             const searchContainer = document.querySelector('.searchContainer');
             const search = document.querySelector('.search');
-            searchContainer.insertBefore(h5,search);
+            searchContainer.insertBefore(p,search);
         }else{
             // create element
-            const h5 = document.createElement('h5');
-            h5.className = 'alert alert-danger';
-            h5.appendChild(document.createTextNode(`Please fill in all the required fields`));
+            const p = document.createElement('p');
+            p.className = 'alert alert-danger';
+            p.appendChild(document.createTextNode(`Please fill in all the required fields`));
             const searchContainer = document.querySelector('.searchContainer');
             const search = document.querySelector('.search');
-            searchContainer.insertBefore(h5,search);
+            searchContainer.insertBefore(p,search);
         }
 
         setTimeout(()=>{
             clearAlert();
-        },4000);
+        },7000);
         
         $('input#name').val('');
         $('input#location').val('');
